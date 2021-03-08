@@ -59,9 +59,9 @@ Reserved Keywords
 '''
 Object identity
 '''
-score = 400
-identity = id(score)
-print(identity)
+#score = 400
+#identity = id(score)
+#print(identity)
 
 #==================
 
@@ -71,3 +71,45 @@ print(identity)
 #pb = score
 #print(id(score))
 #print(id(pb))
+
+'''
+Object Reference
+'''
+
+# both score and pb point to the samee into object
+# score --------> int 100 <--------- pb
+#score = 100
+#pb = score
+
+#print(type(score))
+#print(type(pb))
+#print(score)
+#print(pb)
+
+# =======================
+
+# pb    -----------> int 20
+# score -----------> int 100
+#pb = 20
+#score = 100
+
+#print(type(score))
+#print(type(pb))
+#print(score)
+#print(pb)
+
+# =======================
+# garbage collection
+
+ #pb     ----------> int 20
+ #score  ----------> str 'Completed'
+ #       ----------> int 100
+
+#pb = 20
+#score = 100
+#score = 'Completed'
+
+#print(type(score))
+#print(type(pb))
+#print(score)
+#print(pb)
